@@ -124,9 +124,17 @@ a {
 }
 
 .footer {
-    padding-top: 70px;
     text-align: center;
-    color: black;
+    background-color: #26272b;
+    padding: 10px 0 10px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
 }
 
 .contact {
@@ -143,6 +151,10 @@ a {
 
 .ctImg:hover {
     background-color: lightgray;
+}
+
+.copyright {
+    margin: 10px 0px 10px 0px;
 }
 
 @media screen and (max-width: 700px) {
