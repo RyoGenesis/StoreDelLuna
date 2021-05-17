@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>StoreDeLuna</title>
 
     <link rel="stylesheet" href="styles/style.css">
+
+
+
 </head>
+
 <body>
-    <section class="header">
+    <section id="header">
+        <div class="first-header">
+            <div class="navbar">
+                <a href="/">
+                    <img src="assets/logo-itemku-desktop.svg" alt="">
+                </a>
+                <div class="dropdown-menu">
+                    <p>Menu 1</p>
+                    <div class="dropdown-menu-content">
+                        <p>Menu 1 a</p>
+                        <p>Menu 1 b</p>
+                        <p>Menu 1 c</p>
+                    </div>
+                </div>
+                <a class="nav-link" href="">
+                    <p>Menu 2</p>
+                </a>
+            </div>
+
+
+            <div class="login-register show">
+                <a href="/login.html">
+                    <p>Login</p>
+                </a>
+                <a href="/register.html">
+                    <p>Register</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Reponsive -->
+        <div class="dropdown-navbar first-header">
+            <div class="dropdown-navbar-header">
+                <a href="/">
+                    <img src="assets/logo-itemku-desktop.svg" height="50px" alt="">
+                </a>
+                <div class="login-register">
+                    <a href="/login.html">
+                        <p>Login</p>
+                    </a>
+                    <a href="/register.html">
+                        <p>Register</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/menu.png" alt="">
+                <div class="dropdown-content">
+                    <div class="dropdown-menu">
+                        <p>Menu 1</p>
+                        <div class="dropdown-menu-content">
+                            <p>Menu 1 a</p>
+                            <p>Menu 1 b</p>
+                            <p>Menu 1 c</p>
+                            <p>Menu 2</p>
+                        </div>
+                    </div>
+                    <a href="">
+                        <p>Menu 2</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
 
     </section>
 
@@ -16,8 +84,22 @@
 
     </main>
 
-    <section class="footer">
-
-    </section>
+    <footer class="footer">
+        <p>For more information</p>
+        <div class="contact">
+            <div class="contact-col">
+                <a href="https://twitter.com/">
+                    <img class=" ctImg" src="assets/twitter.png" alt="">
+                </a>
+            </div>
+            <div class="contact-col">
+                <a href="https://www.instagram.com/">
+                    <img class="ctImg" src="assets/instagram.png" alt="">
+                </a>
+            </div>
+        </div>
+        <p>© Copyright 2020 StoreDeLuna</p>
+    </footer>
 </body>
+
 </html>
