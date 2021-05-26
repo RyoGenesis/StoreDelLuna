@@ -86,7 +86,7 @@
     <main>
         <div class="reg-content">
             <h3 class="title">Registration Form</h3>
-            <form name="register" action="/" method="POST">
+            <form action="" method="post" onsubmit="validate(event)">
                 <div class="row-reg">
                     <div class="column-reg">
                         <label for="username">Name </label>
@@ -136,16 +136,14 @@
 
                 <div class="row-reg">
                     <div class="column-reg">
-                        <label for="sex">Gender </label>
+                        <label for="gender">Gender </label>
                     </div>
                     <div class="column-reg">
                         <p>:</p>
                     </div>
                     <div class="column-reg">
-                        <input type="radio" name="gender" id="sexMale" value="Male">
-                        <label for="sexMale">Male</label>
-                        <input type="radio" name="gender" id="sexFemale" value="Female">
-                        <label for="sexFemale">Female</label>
+                    <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
                     </div>
                 </div>
 
@@ -180,8 +178,14 @@
                 </div>
 
                 <div class="row-reg">
+                    <div id="form-response" class="column-reg">
+
+                    </div>
+                </div>
+
+                <div class="row-reg">
                     <div class="column-reg">
-                        <button id="btnSubmit" type="submit">Submit</button>
+                        <button id="btnSubmit" type="submit" >Submit</button>
 
                     </div>
                 </div>

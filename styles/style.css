@@ -125,6 +125,24 @@ a {
 .reg-content {
     background-color: grey;
     color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.reg-content input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
 .row-reg {
@@ -150,6 +168,17 @@ a {
     display: inline-block;
 }
 
+#btnSubmit:hover {
+    background-color: darkcyan;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: greenyellow;
+}
 
 /* Footer  */
 
