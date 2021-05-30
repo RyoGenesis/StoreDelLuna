@@ -83,38 +83,34 @@
 
     </section>
 
-    <main>
+    <main id="reg-section">
         <div class="reg-content">
             <h3 class="title">Registration Form</h3>
             <form action="" method="post" onsubmit="validate(event)">
-                <div class="row-reg">
-                    <div class="column-reg">
-                        <label for="username">Name </label>
+                <div class="reg">
+                    <div id="form-response" class="column-reg">
+
                     </div>
-                    <div class="column-reg">
-                        <p>:</p>
+                </div>
+                <div class="reg">
+                    <div class="form-label column-reg">
+                        <label for="username">Name </label>
                     </div>
                     <div class="column-reg">
                         <input type="text" name="username" id="username" placeholder="Name">
                     </div>
                 </div>
-                <div class="row-reg">
-                    <div class="column-reg">
+                <div class="reg">
+                    <div class="form-label column-reg">
                         <label for="password">Password </label>
-                    </div>
-                    <div class="column-reg">
-                        <p>:</p>
                     </div>
                     <div class="column-reg">
                         <input type="password" name="password" id="password" placeholder="Password">
                     </div>
                 </div>
-                <div class="row-reg">
-                    <div class="column-reg">
+                <div class="reg">
+                    <div class="form-label column-reg">
                         <label for="confirmPassword">Confirm Password </label>
-                    </div>
-                    <div class="column-reg">
-                        <p>:</p>
                     </div>
                     <div class="column-reg">
                         <input type="password" name="confirmPassword" id="confirmPassword"
@@ -122,70 +118,52 @@
                     </div>
                 </div>
 
-                <div class="row-reg">
-                    <div class="column-reg">
+                <div class="reg">
+                    <div class="form-label column-reg">
                         <label for="fullName">Full Name </label>
-                    </div>
-                    <div class="column-reg">
-                        <p>:</p>
                     </div>
                     <div class="column-reg">
                         <textarea name="fullName" id="fullName" rows="2" placeholder="Full Name"></textarea>
                     </div>
                 </div>
 
-                <div class="row-reg">
-                    <div class="column-reg">
+                <div class="reg">
+                    <div class="form-label column-reg">
                         <label for="gender">Gender </label>
                     </div>
                     <div class="column-reg">
-                        <p>:</p>
-                    </div>
-                    <div class="column-reg">
-                    <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
-                    <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                        <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
                     </div>
                 </div>
 
-                <div class="row-reg">
-                    <div class="column-reg">
+                <div class="reg">
+                    <div class="form-label column-reg">
                         <label for="email">Email </label>
-                    </div>
-                    <div class="column-reg">
-                        <p>:</p>
                     </div>
                     <div class="column-reg">
                         <input type="email" name="email" id="email" placeholder="Email">
                     </div>
                 </div>
 
-                <div class="row-reg">
-                    <div class="column-reg">
+                <div class="reg">
+                    <div class="form-label column-reg">
                         <label for="age">Age </label>
-                    </div>
-                    <div class="column-reg">
-                        <p>:</p>
                     </div>
                     <div class="column-reg">
                         <input type="number" name="age" id="age" placeholder="Your Age">
                     </div>
                 </div>
-                <div class="row-reg">
-                    <div class="column-reg">
+                <div class="reg">
+                    <div class="form-label column-reg">
                         <p> <input type="checkbox" name="terms" id="terms"> Agreement Terms & Conditions</p>
 
                     </div>
                 </div>
 
-                <div class="row-reg">
-                    <div id="form-response" class="column-reg">
-
-                    </div>
-                </div>
-
-                <div class="row-reg">
+                <div class="reg-submit">
                     <div class="column-reg">
-                        <button id="btnSubmit" type="submit" >Submit</button>
+                        <button id="btnSubmit" type="submit">Submit</button>
 
                     </div>
                 </div>

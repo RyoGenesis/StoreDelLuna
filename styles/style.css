@@ -118,16 +118,31 @@ a {
 }
 
 /* Register  */
+
+#reg-section {
+    padding-bottom: 118vh;
+    background-color: darkgrey;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
 .title {
     text-align: center;
 }
 
 .reg-content {
+    margin-top: 8vw;
     background-color: grey;
     color: white;
     border-radius: 5px;
     padding: 20px;
     box-sizing: border-box;
+    opacity: 0.9;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .reg-content input[type=text],
@@ -136,7 +151,7 @@ input[type=password],
 input[type=email],
 textarea {
     width: 100%;
-    padding: 5px;
+    padding: 5px 200px 5px 8px;
     border: 0px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -145,27 +160,52 @@ textarea {
     resize: vertical;
 }
 
-.row-reg {
+.reg-content input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+textarea::placeholder {
+    text-align: left;
+}
+
+.form-label {
+    padding-left: 3px;
+}
+
+
+.reg-submit {
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    padding-bottom: 5px;
+
 }
 
 .column-reg {
     display: flex;
+    padding-top: 8px;
     padding-right: 5px;
+}
+
+
+#female,
+#male {
+    margin-bottom: 12px;
+}
+
+#female {
+    margin-left: 8px;
 }
 
 #btnSubmit {
     background-color: aqua;
     border: none;
     color: white;
-    padding: 8px 12px;
+    padding: 8px 200px 8px 200px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
+    margin-top: 8px;
 }
 
 #btnSubmit:hover {

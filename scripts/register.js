@@ -1,6 +1,6 @@
 let button = document.getElementById('btnSubmit');
 
- function validate(event) {
+function validate(event) {
     event.preventDefault();
 
     let username = document.getElementById('username').value;
@@ -16,6 +16,7 @@ let button = document.getElementById('btnSubmit');
 
     if (username.length < 3) {
         messaage.innerHTML = '<p class="error-message">Username must be more than 3 characters!</p>';
+        scroll();
         return;
     }
 
@@ -41,16 +42,19 @@ let button = document.getElementById('btnSubmit');
     if (!isNumeric || !isAlpha || !isUpper || password.length < 5 || password.length > 12) {
 
         messaage.innerHTML = '<p class="error-message">Inavlid password input!</p>';
+        scroll();
         return;
     }
 
     if (password.value != confirmPassword) {
         messaage.innerHTML = '<p class="error-message">Confirm Password must be same as password!</p>';
+        scroll();
         return;
     }
 
     if (fullName.length == 0) {
         messaage.innerHTML = '<p class="error-message">Full Name cannot be empty!</p>';
+        scroll();
         return;
     }
 
@@ -65,36 +69,42 @@ let button = document.getElementById('btnSubmit');
 
     if (selectedGender == "") {
         messaage.innerHTML = '<p class="error-message">Please select gender!</p>';
+        scroll();
         return;
     }
 
     if (!validateEmail(email)) {
         messaage.innerHTML = '<p class="error-message">Invalid email address!</p>';
+        scroll();
         return;
     }
 
     if (age < 0) {
         messaage.innerHTML = '<p class="error-message">Please input correct age!</p>';
+        scroll();
         return;
     }
 
     if (!(age >= '0' && age <= '9')) {
         messaage.innerHTML = '<p class="error-message">Age must be numeric!</p>';
+        scroll();
         return;
     }
 
     if (!agreement.checked) {
         messaage.innerHTML = '<p class="error-message">Please accept the terms and conditions!</p>';
+        scroll();
         return;
     }
 
 
     messaage.innerHTML = '<p class="success-message">Thank you for registration!</p>';
+    scroll();
 
 }
 
 
-function validateEmail(email) {
+var validateEmail = (email) => {
 
     if (email.length <= 2) {
         return false;
@@ -110,4 +120,9 @@ function validateEmail(email) {
     if (dot === email.length - 1) return false;
 
     return true;
+}
+
+var scroll = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
