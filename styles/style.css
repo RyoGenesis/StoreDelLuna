@@ -260,6 +260,17 @@ textarea::placeholder {
     margin: 10px 0px 10px 0px;
 }
 
+@media screen and (max-width: 770px) {
+    .reg-content {
+        margin-top: 5vw;
+    }
+
+    #reg-section {
+        padding-bottom: 100vh;
+    }
+
+}
+
 @media screen and (max-width: 700px) {
     .navbar {
         display: none;
@@ -267,6 +278,21 @@ textarea::placeholder {
 
     .show {
         display: none;
+    }
+
+    #reg-section {
+        padding: 20px;
+    }
+
+    .reg-content {
+        margin-top: 0;
+        opacity: 1;
+        position: static;
+        transform: none;
+    }
+
+    #btnSubmit {
+        padding: 8px 200px 8px 200px;
     }
 
     .dropdown-navbar-header a {
@@ -284,7 +310,23 @@ textarea::placeholder {
 
 }
 
+
+
+@media screen and (max-width: 420px) {
+
+    #reg-section {
+        padding: 0;
+    }
+
+    #btnSubmit {
+        padding: 8px 50px 8px 50px;
+    }
+}
+
+
 @media screen and (max-width: 300px) {
+
+
     .dropdown-content {
         padding-right: 1000px !important;
     }
