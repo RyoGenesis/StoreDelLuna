@@ -132,7 +132,7 @@ body {
 
 #reg-section {
     padding-bottom: 119vh;
-    background-color: darkgrey;
+    background-color: #005a8d;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -208,7 +208,7 @@ textarea::placeholder {
 }
 
 #btnSubmit {
-    background-color: aqua;
+    background-color: #022e57;
     border: none;
     color: white;
     padding: 8px 200px 8px 200px;
@@ -234,11 +234,12 @@ textarea::placeholder {
 /* Testimonial */
 
 #testimonial {
-    background-color: darkgrey;
+    background-color: #005a8d;
 }
 
 #testimonial-header {
     padding-top: 50px;
+    color: #fff5fd;
     text-align: center;
 }
 
