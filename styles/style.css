@@ -25,6 +25,9 @@ body {
 #header {
     width: 100%;
     box-shadow: 0px 4px 8px lightgrey;
+    background-color: #022e57;
+    color: white;
+    font-weight: bold;
 }
 
 .first-header {
@@ -49,6 +52,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     max-width: 1000px;
 }
 
@@ -64,11 +68,11 @@ body {
 
 
 .navbar p:hover {
-    background-color: lightgrey;
+    background-color: rgb(70, 43, 138);
 }
 
 .login-register p:hover {
-    background-color: lightgrey;
+    background-color: rgb(70, 43, 138);
 }
 
 .dropdown-menu {
@@ -93,7 +97,7 @@ body {
 
 .dropdown-menu-content p {
     min-width: 160px;
-    background-color: white;
+    background-color: #022e57;
 }
 
 .dropdown-navbar {
@@ -116,12 +120,12 @@ body {
 .dropdown-content p {
     padding: 16px;
     cursor: pointer;
-    background-color: white;
+    background-color: #022e57;
     min-width: 160px;
 }
 
 .dropdown-content p:hover {
-    background-color: lightgray;
+    background-color: rgb(70, 43, 138);
 }
 
 .dropdown-navbar:hover .dropdown-content {
@@ -332,6 +336,11 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 770px) {
+
+    .dropdown-navbar-header img{
+        width: auto;
+    }
+
     .reg-content {
         margin-top: 5vw;
     }
@@ -349,6 +358,11 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 700px) {
+
+    .dropdown-navbar-header img{
+        width: auto;
+    }
+
     .navbar {
         display: none;
     }
@@ -390,6 +404,10 @@ textarea::placeholder {
 
 @media screen and (max-width: 420px) {
 
+    .dropdown-navbar-header img{
+        width: auto;
+    }
+
     #reg-section {
         padding: 0;
     }
@@ -417,6 +435,9 @@ textarea::placeholder {
 
 @media screen and (max-width: 300px) {
 
+    .dropdown-navbar-header img{
+        width: auto;
+    }
 
     .dropdown-content {
         padding-right: 1000px !important;
