@@ -11,7 +11,7 @@ a {
 body {
     display: block;
     font-family: 'Roboto',
-    sans-serif;
+        sans-serif;
 }
 
 .container {
@@ -35,10 +35,12 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .first-header img {
-    width: 150px;
+    width: 100px;
+    margin-top: 5px;
 }
 
 .login-register {
@@ -135,7 +137,7 @@ body {
 /* Register  */
 
 #reg-section {
-    padding-bottom: 119vh;
+    padding: 10vh;
     background-color: #005a8d;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -144,20 +146,32 @@ body {
 
 .title {
     text-align: center;
+    background-color: #293B5F;
+    padding-bottom: 25px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title img {
+    padding-top: 20px;
+    width: 150px;
 }
 
 .reg-content {
-    margin-top: 9vw;
     background-color: grey;
     color: white;
     border-radius: 5px;
-    padding: 20px;
     box-sizing: border-box;
-    opacity: 0.9;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin-right: 25%;
+    margin-left: 25%;
+    box-shadow: 0 0 4px lightgray;
+    border-radius: 10px;
+}
+
+.reg-form {
+    padding: 5px 20px 20px 20px;
 }
 
 .reg-content input[type=text],
@@ -166,7 +180,7 @@ input[type=password],
 input[type=email],
 textarea {
     width: 100%;
-    padding: 5px 200px 5px 8px;
+    padding: 8px 200px 8px 8px;
     border: 0px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -212,7 +226,7 @@ textarea::placeholder {
 }
 
 #btnSubmit {
-    background-color: #022e57;
+    background-color: #293B5F;
     border: none;
     color: white;
     padding: 8px 200px 8px 200px;
@@ -337,16 +351,17 @@ textarea::placeholder {
 
 @media screen and (max-width: 770px) {
 
-    .dropdown-navbar-header img{
+    .dropdown-navbar-header img {
         width: auto;
     }
 
-    .reg-content {
-        margin-top: 5vw;
+    #reg-section {
+        padding: 25px;
     }
 
-    #reg-section {
-        padding-bottom: 100vh;
+    .reg-content {
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
     #testimonial-container {
@@ -359,7 +374,7 @@ textarea::placeholder {
 
 @media screen and (max-width: 700px) {
 
-    .dropdown-navbar-header img{
+    .dropdown-navbar-header img {
         width: auto;
     }
 
@@ -376,11 +391,10 @@ textarea::placeholder {
     }
 
     .reg-content {
-        margin-top: 0;
-        opacity: 1;
-        position: static;
-        transform: none;
+        margin-left: 5px;
+        margin-right: 5px;
     }
+
 
     #btnSubmit {
         padding: 8px 200px 8px 200px;
@@ -404,12 +418,8 @@ textarea::placeholder {
 
 @media screen and (max-width: 420px) {
 
-    .dropdown-navbar-header img{
+    .dropdown-navbar-header img {
         width: auto;
-    }
-
-    #reg-section {
-        padding: 0;
     }
 
     #btnSubmit {
@@ -435,7 +445,7 @@ textarea::placeholder {
 
 @media screen and (max-width: 300px) {
 
-    .dropdown-navbar-header img{
+    .dropdown-navbar-header img {
         width: auto;
     }
 
