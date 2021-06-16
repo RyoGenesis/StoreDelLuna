@@ -134,6 +134,31 @@ body {
     display: block;
 }
 
+/* Index  */
+#index {
+    display: grid;
+    place-content: center;
+    background-color: #005a8d;
+}
+
+#slider {
+    display: grid;
+    grid-template-columns: 1fr 700px 1fr;
+    width: 750px;
+    /* margin: 0 auto; */
+}
+
+#slider #images {
+    display: flex;
+    overflow: hidden;
+}
+
+#slider img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+}
+
 /* Register  */
 
 #reg-section {
@@ -348,6 +373,8 @@ textarea::placeholder {
 .copyright {
     margin: 10px 0px 10px 0px;
 }
+
+/* Responsive  */
 
 @media screen and (max-width: 770px) {
 
