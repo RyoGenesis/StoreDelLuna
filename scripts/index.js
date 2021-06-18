@@ -34,3 +34,18 @@ function updateSlider() {
         marginLeft
     });
 }
+
+window.onscroll = function () {
+    scrollable();
+};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function scrollable() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}

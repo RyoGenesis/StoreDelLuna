@@ -19,6 +19,13 @@ body {
     margin: auto;
 }
 
+#separator {
+    width: 80px;
+    height: 3px;
+    background-color: yellow;
+    margin-bottom: 1rem !important;
+}
+
 
 /* Navbar - Header  */
 
@@ -134,26 +141,81 @@ body {
     display: block;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
 /* Index  */
-#index {
+
+#banner-header {
+    background-color: #022e57;
+}
+
+.header-text {
+    padding-top: 50px;
+    color: white;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    font-style: italic;
+}
+
+.header-product {
+    text-align: right;
+}
+
+.header-product img {
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+.header-button {
+    padding-top: 10px;
+}
+
+.headtext {
+    padding-top: 10px;
+}
+
+.headbutton {
+    background-color: yellow;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.headbutton:hover {
+    background-color: #005a8d;
+}
+
+
+#slider {
     display: grid;
     place-content: center;
     background-color: #005a8d;
 }
 
-#slider {
+#slider-content {
     display: grid;
     grid-template-columns: 1fr 700px 1fr;
     width: 750px;
     /* margin: 0 auto; */
 }
 
-#slider #images {
+#slider-content #images {
     display: flex;
     overflow: hidden;
 }
 
-#slider img {
+#slider-content img {
     width: 700px;
     height: 500px;
     object-fit: cover;
@@ -378,6 +440,19 @@ textarea::placeholder {
 
 @media screen and (max-width: 770px) {
 
+    #banner-header {
+        padding: 20px;
+    }
+
+    .header-product {
+        padding-top: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+        font-style: italic;
+    }
+
     .dropdown-navbar-header img {
         width: auto;
     }
@@ -466,6 +541,43 @@ textarea::placeholder {
         padding-left: 20px;
         padding-right: 20px;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    #banner-header .first-header {
+        display: block;
+    }
+
+    #banner-header {
+        background-image: url('/assets/shine-world-dua.png');
+        width: 90%;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header-text {
+        padding-top: 20px;
+    }
+
+    .header-text .headtext {
+        font-size: 10px !important;
+    }
+
+    .headtext h1 {
+        font-size: 30px;
+    }
+
+    .headbutton {
+        font-size: 10px;
+    }
+
+    .header-product {
+        display: none;
+        text-align: left;
+    }
+
+    .header-product img {
+        width: 90%;
     }
 }
 
