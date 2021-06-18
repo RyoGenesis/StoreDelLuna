@@ -165,16 +165,17 @@ body {
 }
 
 .header-product {
+    padding-top: 20px;
     text-align: right;
 }
 
 .header-product img {
     width: 80%;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
 }
 
 .header-button {
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .headtext {
@@ -183,7 +184,6 @@ body {
 
 .headbutton {
     background-color: yellow;
-    /* Green */
     border: none;
     color: black;
     padding: 10px 32px;
@@ -198,10 +198,61 @@ body {
 }
 
 
+#aboutus {
+    background-color: #005a8d;
+    padding-top: 4rem;
+    padding-bottom: 80px;
+}
+
+.aboutus-title {
+    padding-top: 10px;
+    color: white;
+}
+
+.aboutus-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.aboutus-title .headtext {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.aboutus-title h1 {
+    font-size: 40px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.aboutus-image {
+    text-align: right;
+    padding-top: 70px;
+    margin-left: 10px;
+}
+
+.aboutus-image img {
+    width: 500px;
+}
+
+.aboutus-image-resp {
+    text-align: right;
+    padding-top: 10px;
+    display: none;
+}
+
+.aboutus-image-resp img {
+    width: 270px;
+}
+
+
 #headline {
     display: grid;
     place-content: center;
-    background-color: #005a8d;
+    background-color: #022e57;
     padding-top: 4rem;
     padding-bottom: 50px;
 }
@@ -239,9 +290,16 @@ body {
     padding: 10px;
 }
 
+.header-text .headtext p,
+.headline-title .headtext p,
+.aboutus-title .headtext p {
+    color: #ccc !important;
+}
+
 .headline-title h1 {
     font-size: 30px;
     font-style: italic;
+    padding-bottom: 10px;
 }
 
 #left,
@@ -266,9 +324,12 @@ body {
     border-radius: 3px 0 0 3px;
 }
 
-#left:hover, #right:hover {
+#left:hover,
+#right:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+
 
 /* Register  */
 
@@ -563,6 +624,7 @@ textarea::placeholder {
     .dropdown-content {
         right: 5px;
     }
+
 }
 
 
@@ -606,6 +668,7 @@ textarea::placeholder {
 
     .header-text {
         padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .header-text .headtext {
@@ -627,6 +690,34 @@ textarea::placeholder {
 
     .header-product img {
         width: 90%;
+    }
+
+    #aboutus {
+        padding: 2rem 20px 60px 20px;
+    }
+
+    .aboutus-image-resp {
+        display: block;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .aboutus-content {
+        max-width: 1000px;
+        margin: auto;
+        display: inline;
+    }
+
+    .aboutus-image {
+        display: none;
+    }
+
+    #slider-content {
+        width: 400px;
+    }
+
+    #slider-content img {
+        width: 400px;
     }
 }
 
