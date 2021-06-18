@@ -144,7 +144,8 @@ body {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    z-index: 1;
 }
 
 /* Index  */
@@ -154,7 +155,7 @@ body {
 }
 
 .header-text {
-    padding-top: 50px;
+    padding-top: 90px;
     color: white;
 }
 
@@ -168,8 +169,8 @@ body {
 }
 
 .header-product img {
-    width: 70%;
-    padding-bottom: 20px;
+    width: 80%;
+    padding-bottom: 60px;
 }
 
 .header-button {
@@ -197,17 +198,20 @@ body {
 }
 
 
-#slider {
+#headline {
     display: grid;
     place-content: center;
     background-color: #005a8d;
+    padding-top: 4rem;
+    padding-bottom: 50px;
 }
 
 #slider-content {
-    display: grid;
-    grid-template-columns: 1fr 700px 1fr;
-    width: 750px;
-    /* margin: 0 auto; */
+    margin-top: 10px;
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+    width: 700px;
 }
 
 #slider-content #images {
@@ -219,6 +223,51 @@ body {
     width: 700px;
     height: 500px;
     object-fit: cover;
+}
+
+.headline-title {
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+#headline #separator {
+    margin: auto !important;
+}
+
+.headline-title .headtext {
+    padding: 10px;
+}
+
+.headline-title h1 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+#left,
+#right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 1px 1px 0;
+    user-select: none;
+    background-color: inherit;
+}
+
+#right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#left:hover, #right:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Register  */
