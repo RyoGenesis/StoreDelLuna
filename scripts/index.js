@@ -35,6 +35,10 @@ function updateSlider() {
     });
 }
 
+setInterval(function () {
+    $("#right").trigger("click");
+}, 8000);
+
 window.onscroll = function () {
     scrollable();
 };
