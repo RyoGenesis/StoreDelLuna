@@ -11,10 +11,10 @@ a {
 body {
     display: block;
     font-family: 'Roboto',
-        sans-serif;   
+        sans-serif;
 }
 
-main{
+main {
     background: url("/assets/background.jpg");
     background-size: auto;
 }
@@ -222,14 +222,14 @@ main{
 
 .header-text .headtext p,
 .aboutus-title .headtext p {
-    color: #ccc !important;   
+    color: #ccc !important;
 }
 
-.headline-title .headtext p{
-    color: rgb(231, 231, 231); 
+.headline-title .headtext p {
+    color: rgb(231, 231, 231);
 }
 
-.headline-title .headtext{
+.headline-title .headtext {
     text-shadow: 0px 1px 5px black;
 }
 
@@ -423,11 +423,12 @@ main{
     margin-bottom: 20px;
 }
 
-.artist-container h2{
+.artist-container h2 {
     transition: ease-in-out .3s;
 }
 
-.top-artists img:hover, .artist-container h2:hover {
+.top-artists img:hover,
+.artist-container h2:hover {
     transform: scale(1.2);
 }
 
@@ -596,13 +597,19 @@ textarea::placeholder {
     padding-top: 10px;
 }
 
+.testimonial-title h1 {
+    font-size: 40px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
 #testimonial-container {
     text-align: center;
     padding-top: 10px;
     max-width: 1000px;
     margin: auto;
     margin-top: 32px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -626,6 +633,12 @@ textarea::placeholder {
 
 .testimonial-img img {
     border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    transition: ease-in-out .3s;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .testimonial-content {
@@ -638,35 +651,48 @@ textarea::placeholder {
 
 /* K-Pop Catalog*/
 
-#catalog-header{
+#catalog-header {
     color: whitesmoke;
     text-align: center;
     font-weight: bold;
-    padding-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
-#catalog-header h1{
-    font-size: 50px;
+#catalog-header h1 {
+    font-size: 40px;
+    font-style: italic;
+    padding-bottom: 20px;
 }
 
-#catalog-items{
+#catalog-items {
     color: whitesmoke;
+    padding-bottom: 50px;
 }
 
-.artist-header{
-    margin-top: 20px;
+#catalog-header .headtext {
     padding-top: 0px;
+}
+
+.artist-header {
     display: flex;
     align-items: center;
     flex-direction: column;
     font-size: 30px;
 }
 
-.artist-header #separator{
-    width: 60%;
+
+.artist-header h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
 }
 
-#product-container{
+/* .artist-header #separator {
+    width: 10%;
+} */
+
+
+#product-container {
     max-width: 1000px;
     margin: auto;
     padding-top: 12px;
@@ -674,20 +700,20 @@ textarea::placeholder {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
-    gap: 6px;   
+    gap: 6px;
 }
 
-.product-card{
+.product-card {
     padding: 2px;
     text-align: center;
 }
 
-.product-content{
+.product-content {
     margin-top: 5px;
     font-weight: bold;
 }
 
-.product-img{
+.product-img {
     margin: auto;
     padding-bottom: 10px;
     text-align: center;
@@ -695,7 +721,7 @@ textarea::placeholder {
     height: 10rem;
 }
 
-.product-img img{
+.product-img img {
     width: inherit;
     height: inherit;
     border: double;
@@ -819,7 +845,7 @@ textarea::placeholder {
         padding-right: 60px;
     }
 
-    #product-container{
+    #product-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -862,6 +888,7 @@ textarea::placeholder {
 
     .dropdown-content {
         right: 5px;
+        z-index: 1;
     }
 
     .header-product {
@@ -910,7 +937,8 @@ textarea::placeholder {
 
 @media screen and (max-width: 420px) {
 
-    #slider-content, #slider-content img{
+    #slider-content,
+    #slider-content img {
         height: 22rem;
     }
 
@@ -998,7 +1026,7 @@ textarea::placeholder {
         width: 90%;
     }
 
-    #product-container{
+    #product-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -1015,7 +1043,7 @@ textarea::placeholder {
         width: 87.5%;
     }
 
-    #product-container .product-content{
+    #product-container .product-content {
         margin-bottom: 15px;
     }
 
@@ -1024,7 +1052,7 @@ textarea::placeholder {
         height: 7em;
     }
 
-    .product-content{
+    .product-content {
         font-size: 10px;
     }
 }
