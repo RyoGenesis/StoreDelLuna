@@ -39,9 +39,9 @@ function validate(event) {
 
     }
 
-    if (!isNumeric || !isAlpha || !isUpper || password.length < 5 || password.length > 12) {
+    if (!isNumeric || !isAlpha || !isUpper || password.value.length < 5 || password.value.length > 12) {
 
-        messaage.innerHTML = '<p class="error-message">Inavlid password input!</p>';
+        messaage.innerHTML = '<p class="error-message">Invalid password input!</p>';
         scroll();
         return;
     }
@@ -97,7 +97,6 @@ function validate(event) {
         return;
     }
 
-
     messaage.innerHTML = '<p class="success-message">Thank you for registration!</p>';
     scroll();
 
@@ -115,7 +114,7 @@ var validateEmail = (email) => {
     }
 
     var dot = email.indexOf(".");
-    if (dot <= email.indexOf("@") + 2) return false;
+    if (dot <= email.indexOf("@") + 1) return false;
 
     if (dot === email.length - 1) return false;
 

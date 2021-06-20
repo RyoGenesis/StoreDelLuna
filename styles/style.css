@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    background: url("/assets/background.jpg");
+    background: url('../assets/background.jpg');
     background-size: auto;
 }
 
@@ -143,7 +143,7 @@ main {
     background-color: rgb(70, 43, 138);
 }
 
-.dropdown-navbar:hover .dropdown-content {
+.dropdown-area:hover .dropdown-content {
     display: block;
 }
 
@@ -922,7 +922,7 @@ textarea::placeholder {
     }
 
     #banner-header {
-        background-image: url('/assets/shine-world-dua.png');
+        background-image: url('../assets/shine-world-dua.png');
         width: 92.4vw;
         background-position: right;
         background-repeat: no-repeat;
