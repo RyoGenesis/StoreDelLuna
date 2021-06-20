@@ -85,7 +85,7 @@ function validate(event) {
         return;
     }
 
-    if (!(age >= '0' && age <= '9')) {
+    if (!(age > '0' && age <= '9')) {
         messaage.innerHTML = '<p class="error-message">Age must be numeric!</p>';
         scroll();
         return;
