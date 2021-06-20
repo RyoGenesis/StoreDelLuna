@@ -490,6 +490,11 @@ main {
     padding-right: 20px;
 }
 
+.title h2 {
+    padding-top: 10px;
+    font-style: italic;
+}
+
 .title img {
     padding-top: 20px;
     width: 150px;
