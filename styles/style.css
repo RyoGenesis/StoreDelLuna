@@ -373,7 +373,7 @@ main {
     background-color: #022e57;
     position: relative;
     padding-top: 1rem;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     opacity: 0.95;
 }
 
@@ -388,6 +388,8 @@ main {
     max-width: 1000px;
     margin: auto;
     padding-top: 40px;
+    text-align: center;
+    color: white;
 }
 
 .why-us-title #separator {
@@ -436,6 +438,10 @@ main {
     text-align: center;
     font-weight: bold;
     color: whitesmoke;
+}
+
+#why-us-bottom{
+    margin-top: 30px;
 }
 
 #index-testimonial {
@@ -706,6 +712,12 @@ textarea::placeholder {
 .product-card {
     padding: 2px;
     text-align: center;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .product-content {
@@ -726,6 +738,11 @@ textarea::placeholder {
     height: inherit;
     border: double;
     border-width: 3px;
+    transition: ease 0.4s;
+}
+
+.product-img img:hover{
+    margin-top: -10px;
 }
 
 
