@@ -5,3 +5,5 @@ Simple website featuring K-Pop related albums and merchandises along with regist
 Created using HTML, CSS, Javascript and JQuery
 
 My contributions: UI Design, Frontend development, Logo design, Polishing
+
+Check the result here: https://medicalyproject.github.io/StoreDelLuna/
